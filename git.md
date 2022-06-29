@@ -25,5 +25,31 @@ Git is a Distributed Version Control tool that supports distributed non-linear w
 8. Branching: Every collaborator's working directory is a branch by itself.
 
 
-image.png
+**Git Operations**
+1. git init 
+   The git init command creates a new Git repository
+2. git clone
+   When you clone a repository, you create a copy of the original repository on your Local machine.
+3. git fork
+   When you fork a repository, you create a copy of the original reposiroty on your GitHub Account.
+4. git origin
+   git remote add origin <remote_repo>
+   Lets you add a remote repository
+5. git pull
+   git pull origin master
+   Lets you copy all the files from the master branch of remote repository to your local repository
+6. git push
+   git push origin master
+   Lets you push your local changes into central repository
+7. git status
+   Tells you which files are added to index and are ready to commit.
+8. git add
+   git add <options> <file_name>
+   Lets you add files to your index
+9. git commit 
+   git commit -m <message>
+   It refers to recording snapshots of the repository at a given time.
+   Committed snapshots will never change unless done explicitly.
+
+
 
