@@ -50,6 +50,12 @@ Git is a Distributed Version Control tool that supports distributed non-linear w
    git commit -m <message>
    It refers to recording snapshots of the repository at a given time.
    Committed snapshots will never change unless done explicitly.
+10. get merge
+   Merge integrates the changes made in different branches to one single branch.
+   git merge <branch_name>
+11. git rebase
+    Rebase is used when changes made in one branch needs to be reflected in another branch.
+    git rebase master
 
 
 
