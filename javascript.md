@@ -111,3 +111,4 @@ const singleton = Singleton.getProcessManager()
 const singleton2 = Singleton.getProcessManager()
 
 console.log(singleton === singleton2) // true
+https://github.com/pkellz/devsage/blob/master/DesignPatterns/SingletonPattern.js
