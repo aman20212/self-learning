@@ -269,6 +269,9 @@ subject.fire()
 
 subject.unsubscribe(Observer1)
 subject.fire()
+<br />
+**Proxy Pattern
+Mediator Pattern **
 
 
 
