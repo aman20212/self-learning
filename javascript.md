@@ -19,3 +19,62 @@ Returns false if adding properties is forbidden, otherwise true.<br />
 Returns true if adding/removing properties is forbidden, and all existing properties have configurable: false.<br />
 **Object.isFrozen(obj)**
 Returns true if adding/removing/changing properties is forbidden, and all current properties are configurable: false, writable: false.
+
+
+
+**Design Pattern in JavaScript**<br />
+Design Patterns can be categorised in 3 categories: <br />
+a. Creational <br />
+b. Structural <br />
+c. Behavioral <br />
+
+**1. Creational Design Pattern**<br />
+**Factory design Pattern**
+object creation at centralized location. Resusability. Helps in object creation <br />
+/*
+    Factory Design Pattern -> https://www.youtube.com/watch?v=kuirGzhGhyw
+    Author: DevSage (Youtube) -> https://www.youtube.com/DevSage
+*/
+
+function Developer(name)
+{
+  this.name = name
+  this.type = "Developer"
+}
+
+function Tester(name)
+{
+  this.name = name
+  this.type = "Tester"
+}
+
+function EmployeeFactory()
+{
+  this.create = (name, type) => {
+    switch(type)
+    {
+      case 1:
+        return new Developer(name)
+      case 2:
+        return new Tester(name)
+    }
+  }
+}
+
+function say()
+{
+  console.log("Hi, I am " + this.name + " and I am a " + this.type)
+}
+
+const employeeFactory = new EmployeeFactory()
+const employees = []
+
+employees.push(employeeFactory.create("Patrick", 1))
+employees.push(employeeFactory.create("John", 2))
+employees.push(employeeFactory.create("Jamie", 1))
+employees.push(employeeFactory.create("Taylor", 1))
+employees.push(employeeFactory.create("Tim", 2))
+
+employees.forEach( emp => {
+  say.call(emp)
+})
