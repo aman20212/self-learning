@@ -1,6 +1,6 @@
 https://gist.github.com/Ak-Shaw/360b4ec2a19c4e94cc2dcf0874d4eae2
 
-**Sealing an object globally**
+**Sealing an object globally**\n
 Property descriptors work at the level of individual properties.
 
 There are also methods that limit access to the whole object:
