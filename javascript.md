@@ -20,7 +20,7 @@ Returns true if adding/removing properties is forbidden, and all existing proper
 **Object.isFrozen(obj)**
 Returns true if adding/removing/changing properties is forbidden, and all current properties are configurable: false, writable: false.
 
-
+------------------------------------------------------------------------------*****----------------------------------------------------------------------
 
 **Design Pattern in JavaScript**<br />
 Design Patterns can be categorised in 3 categories: <br />
