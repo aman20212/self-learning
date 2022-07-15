@@ -3,4 +3,5 @@
 **ES6: 2015** <br />
 **ES7: 2016** <br /> 
 **ES8: 2017** <br />
-JavaScript is backward comptabile.
+JavaScript is backward comptabile.<br />
+Babel is a JavaScript compiler. <br />
